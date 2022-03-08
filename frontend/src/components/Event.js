@@ -1,19 +1,21 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import Tickets from './Tickets'
 
 const Event = ({event}) => {
   return (
   <Card className = 'my-3 rounded'>
-      <a href={`/event/${event._id}`}>
+    
+      <Link to ={`/event/${event._id}`}>
       <Card.Img src= {event.image} variant='top'/>
-        </a>
+        </Link>
       <Card.Body>
-        <a href={`/event/${event._id}`}>
+        <Link to={`/event/${event._id}`}>
           <Card.Title as='div'>
             <strong>{event.title}</strong>
           </Card.Title>
-        </a>
+        </Link>
 
            <Card.Text style={{ color:'red' }} className ='schedule' as='h6'>{event.schedule}</Card.Text><br/>
         <Card.Text as='p'>{event.Address}</Card.Text>
