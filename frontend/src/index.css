@@ -15,10 +15,15 @@ code {
 main{
   min-height: 80vh;
 }
-
 .rounded{
-  height:420px;
+  height:470px;
 }
 .schedule{
   color:red;
+  font-family: 'Josefin Sans', sans-serif;
+  
 }
+.brand{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size:x-large;
+  }

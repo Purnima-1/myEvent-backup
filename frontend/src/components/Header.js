@@ -1,13 +1,13 @@
 import React from 'react'
 import { Container,Navbar,Nav} from 'react-bootstrap'
-import { LinkContainer } from 'react-router-bootstrap'
+//import { LinkContainer } from 'react-router-bootstrap'
 
 const Header = () => {
   return (
     <header>
-    <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
+    <Navbar bg="light" variant="light" expand="lg" collapseOnSelect>
       <Container>
-        <Navbar.Brand href="/">My Events</Navbar.Brand>
+        <Navbar.Brand className ='brand' href="/">eventbrite</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">

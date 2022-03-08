@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
+import Tickets from './Tickets'
 
 const Event = ({event}) => {
   return (
@@ -14,17 +15,18 @@ const Event = ({event}) => {
           </Card.Title>
         </a>
 
-        {/* <Card.Text as='div'>
-          <Rating 
-            value={product.rating}
-            text={`${product.numReviews} reviews`}
-            />
-        </Card.Text> */}
-        <Card.Text className ='schedule'as='h7'>{event.schedule}</Card.Text><br/>
-        <Card.Text as='h7'>{event.Address}</Card.Text><br/>
-        <Card.Text as='h7'>${event.price}</Card.Text><br/><br/>
+           <Card.Text style={{ color:'red' }} className ='schedule' as='h6'>{event.schedule}</Card.Text><br/>
+        <Card.Text as='p'>{event.Address}</Card.Text>
+        <Card.Text as='p'>{event.price}</Card.Text>
         <Card.Text as='h6'>{event.name}</Card.Text>
         <Card.Text as='h6'><i className="fa-solid fa-person-running mx-1"></i>{event.followers} followers</Card.Text>
+        <Card.Text as='div'>
+          <Tickets
+          value={event.tickets} 
+          
+          />
+          </Card.Text>
+
 
       </Card.Body>
 
