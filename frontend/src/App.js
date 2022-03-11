@@ -7,7 +7,6 @@ import EventScreen1 from "./screens/EventScreen1";
 //import HomePageImg from "./components/HomePageImg";
 import HomeScreen from "./screens/HomeScreen";
 
-
 function App() {
   return (
     <>
