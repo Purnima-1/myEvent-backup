@@ -28,12 +28,19 @@ const EventScreen1 = () => {
                 <h3>{event.title}</h3>
               </ListGroup.Item>
               <ListGroup.Item>
-                <p style={{ color: "red" }}>by {event.name}</p>
+                <p>by <span style={{ color: "red" }}>{event.name}</span></p>
                 <p>{event.followers} followers</p>
               </ListGroup.Item>
 
-              <ListGroup.Item>Price: ${event.adtprice?event.adtprice: "Free"}</ListGroup.Item>
-            <ListGroup.Item>Price: ${event.kidprice?event.kidprice: "Free"}</ListGroup.Item>    
+              {/* <ListGroup.Item>Price: ${event.adtprice?event.adtprice: "Free"}</ListGroup.Item>
+            <ListGroup.Item>Price: ${event.kidprice?event.kidprice: "Free"}</ListGroup.Item>     */}
+
+<ListGroup.Item>{event.adtprice?`Price:  ${event.adtprice} and ${event.kidprice}`: "Free"}</ListGroup.Item>
+
+
+{/* <ListGroup.Item>{event.adtprice?`Price:  ${event.kidprice}`: "Free"}</ListGroup.Item>  */}
+
+
              
               </ListGroup>
             <Button

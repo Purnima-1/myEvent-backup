@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import Tickets from './Tickets'
+import Tickets from "./Tickets"
 
 const Event = ({event}) => {
   return (
@@ -23,17 +23,10 @@ const Event = ({event}) => {
         <Card.Text as='h6'>{event.name}</Card.Text>
         <Card.Text as='h6'><i className="fa-solid fa-person-running mx-1"></i>{event.followers} followers</Card.Text>
         <Card.Text as='div'>
-          <Tickets
-          value={event.tickets} 
-          
-          />
+          <Tickets value={event.tickets} />
           </Card.Text>
-
-
       </Card.Body>
-
-      
-      </Card>
+     </Card>
   )
 }
 
