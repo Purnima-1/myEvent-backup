@@ -77,7 +77,7 @@ const EventScreen = () => {
                   type='button'
                  disabled={event.tickets === 0}
                 >
-                  Add To Cart
+                  Tickets
                 </Button>
               </ListGroup.Item>
             </ListGroup>

@@ -23,25 +23,22 @@ const EventScreen1 = () => {
           </Col>
           <Col class="column" md={3} xs={12} sm={12}>
             <ListGroup>
-              <ListGroup.Item>{event.schedule.slice(5, 11)}</ListGroup.Item>
+              <ListGroup.Item>{event.schedule.slice(5, 8)}<br/>{event.schedule.slice(8, 11)}</ListGroup.Item>
               <ListGroup.Item>
                 <h3>{event.title}</h3>
               </ListGroup.Item>
               <ListGroup.Item>
-                <p>by <span style={{ color: "red" }}>{event.name}</span></p>
-                <p>{event.followers} followers</p>
+                <p style={{ color: "red" }}>by {event.name}</p>
+                <p>{event.followers} followers <Button id = "follow" variant="primary" size="sm">
+      Follow  </Button></p>
               </ListGroup.Item>
 
               {/* <ListGroup.Item>Price: ${event.adtprice?event.adtprice: "Free"}</ListGroup.Item>
             <ListGroup.Item>Price: ${event.kidprice?event.kidprice: "Free"}</ListGroup.Item>     */}
-
-<ListGroup.Item>{event.adtprice?`Price:  ${event.adtprice} and ${event.kidprice}`: "Free"}</ListGroup.Item>
-
-
-{/* <ListGroup.Item>{event.adtprice?`Price:  ${event.kidprice}`: "Free"}</ListGroup.Item>  */}
+              <ListGroup.Item>{event.kidprice?`$${event.kidprice.slice(0,6)}`:"Free"} - {event.adtprice?`$${event.adtprice.slice(0,6)}`:"Event"}</ListGroup.Item>
+            
 
 
-             
               </ListGroup>
             <Button
               className="btn-block"
