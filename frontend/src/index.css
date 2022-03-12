@@ -51,6 +51,11 @@ main{
   color:blue;
   font-weight: bold;
   border: 2px solid blue;
- 
-}
+ }
+ .img{
+  max-width:100%;
+  height:auto;
+  background-size: cover;
+   
+ }
 
