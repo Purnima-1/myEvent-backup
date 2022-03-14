@@ -48,7 +48,7 @@ const EventScreen1 = () => {
             <Button 
               className="btn-block"
               type="button"
-              disabled={event.tickets === 0} 
+              disabled={event.tickets === 0?true:false} 
             >
              {event.price === "Free" ? "Register" : "Tickets"}
             </Button>
