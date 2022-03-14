@@ -69,6 +69,40 @@
                 followers: 169,
                 tickets:32
                 },
+                {
+                  _id: '5',
+                  title: "Be Bold Now 2022",
+                  image: '/images/id_5.jpg',
+                  image1: '/images/id_5_5.jpg',
+                   description:
+                    "Be Bold 2022 - A hybrid celebration to embolden women and unleash their limitless potential",
+                  schedule: 'Wed, May 11, 5:30 PM',
+                  Address: 'Seattle Town Hall • Seattle, WA',
+                  source:'https://goo.gl/maps/FLmJzbfwU1mT6suCA',
+                  price: 'Starts at $20.00',
+                  adtprice: "49.00 for 15+ years old",
+                  kidprice: "20.00 for 5-14 years old" ,
+                  name: 'Be Bold Now',
+                  followers: 64,
+                  tickets:112
+                  },
+                  {
+                    _id: '6',
+                    title: "Summer Meltdown Festival",
+                    image: '/images/id_6.jpg',
+                    image1: '/images/id_6_6.jpg',
+                     description:
+                      "We’re talking about 20 years of adventure and great music.",
+                    schedule: 'Thu, Jul 28, 10:00 AM',
+                    Address: 'Sky Meadows Park • Snohomish, WA',
+                    source:'https://goo.gl/maps/FLmJzbfwU1mT6suCA',
+                    price: 'Starts at $120.00',
+                    adtprice: "300.00 for 15+ years old",
+                    kidprice: "120.00 for 5-14 years old" ,
+                    name: 'Seattle Indian Boat Parties',
+                    followers: '1.1k',
+                    tickets: 91
+                    },
       
 ]
 export default events;

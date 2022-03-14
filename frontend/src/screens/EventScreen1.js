@@ -15,11 +15,11 @@ const EventScreen1 = () => {
   const [event,setEvent] = useState({})
 
   useEffect(() => {
-    const fetchProduct = async () => {
+    const fetchEvent = async () => {
       const {data} = await axios.get(`/api/events/${params.id}`)
       setEvent(data);
     }
-    fetchProduct();
+    fetchEvent();
   })
   return (
     <>
@@ -36,7 +36,7 @@ const EventScreen1 = () => {
                 <h3>{event.title}</h3>
               </ListGroup.Item>
               <ListGroup.Item>
-                <p>by <span style={{ color: "red" }}>{event.name}</span></p>
+                <p>by <span style={{ color: "darkblue" }}>{event.name}</span></p>
                 <p>{event.followers} followers <Button id = "follow" variant="primary" size="sm">
       Follow  </Button></p>
               </ListGroup.Item>
