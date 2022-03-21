@@ -4,6 +4,7 @@ import axios from 'axios'
 import Event from "../components/Event";
 import myImg from "../../src/images/homePage.jpg";
 
+
 const HomeScreen = () => {
   const [events, setEvents] = useState([]);
 
@@ -19,6 +20,7 @@ const HomeScreen = () => {
     <>
       <div>
         <img className="img" src={myImg} alt="homepage"></img>
+        
       </div>
       <h1 className="my-4">Upcoming Events Near You !!!</h1>
       <Row>
