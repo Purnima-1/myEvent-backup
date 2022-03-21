@@ -3,6 +3,7 @@ const events = [
     title: "Seattle Night Market",
     image: "/images/id_1.jpg",
     image1: "/images/id_1_1.jpg",
+    
         description:
       "Seattle's largest 21+ only indoor Night Market returns for the ultimate night of eating, drinking & shopping local at Magnuson Hangar 30.",
     schedule: "Sat, Mar 19, 2:00 PM",

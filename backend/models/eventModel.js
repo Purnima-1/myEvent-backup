@@ -19,17 +19,18 @@ const eventSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    
+       
     description: {
       type: String,
       required: true,
     },
     schedule: {
-        type: Date,
-      required: true,
+        type: String,
+      required: true
     },
-    address: {
-      type: String
+    Address: {
+      type: String,
+      required:true
       
     },
     // reviews: [reviewSchema],
