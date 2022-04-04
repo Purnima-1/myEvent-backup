@@ -55,6 +55,7 @@ import Message from "../components/Message";
          type="button"
           
        >
+         
         {event.price === "Free" ? "Register" : "Tickets"}
        </Button>
               </Link>

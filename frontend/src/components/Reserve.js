@@ -3,6 +3,8 @@ import React, { useEffect,useState } from "react";
 import { useDispatch,useSelector } from 'react-redux'
 import { useParams,useNavigate } from "react-router-dom";
 import {Card,Button,Row,Col,Form} from 'react-bootstrap'
+import Message from "./Message";
+import Loader from "./Loader";
 import { reserveEvent } from '../actions/eventActions'
 const Reserve = () => {
   const [qty1, setQty1] = useState(0);
@@ -23,12 +25,15 @@ const Reserve = () => {
 
   return (
     <>
-    
-       
+    {loading ? (
+        <Loader />
+      ) : error ? (
+        <Message variant='danger'>{error}</Message>
+      ) : (      
         <Card className="justify-content-md-center" style={{ width: '44rem',height:'20rem' }} >
         <Row >
           
-        <Col className="column" md={6}> 
+        <Col className="column mx-2" md={4}> 
          <div>{event.title}</div>
         <p>{event.schedule}</p>
         
@@ -36,8 +41,11 @@ const Reserve = () => {
                 <Col className="column" md={6}>
           
           <Row>
-              Price $ {event.adtprice}
-        <Form.Control style={{color:'purple',width: '60%'}}
+              Price: $ {event.adtprice}
+              
+              
+        <Form.Control className='mx-2'
+        style={{color:'purple',width: '50%'}}
                         as='select'
                         value={qty1}
                         onChange={(e) => setQty1(e.target.value)}
@@ -59,8 +67,8 @@ const Reserve = () => {
                         ))
                         }
                          </Form.Control></Row> */}
-                      <Button 
-         className="btn-block"
+                      <Button style={{width: '45%'}}
+         className="btn-block mx-5"
          type="button"
          onClick={addToCartHandler}
          disabled={event.tickets === 0} 
@@ -69,7 +77,7 @@ const Reserve = () => {
   
 </Row>
 </Card>
-
+      )}
     </>
   )
 }
