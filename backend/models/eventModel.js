@@ -19,17 +19,18 @@ const eventSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    
+       
     description: {
       type: String,
       required: true,
     },
     schedule: {
         type: String,
-      required: true,
+      required: true
     },
-    address: {
-      type: String
+    Address: {
+      type: String,
+      required:true
       
     },
     // reviews: [reviewSchema],
@@ -45,12 +46,12 @@ const eventSchema = mongoose.Schema(
       
     },
     adtprice: {
-      type: String
+      type: Number
      
       
     },
     kidprice: {
-      type: String
+      type: Number
       
       
     },

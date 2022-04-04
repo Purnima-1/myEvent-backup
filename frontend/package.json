@@ -11,7 +11,11 @@
     "react": "^17.0.2",
     "react-bootstrap": "^2.2.0",
     "react-dom": "^17.0.2",
+<<<<<<< HEAD
     "react-redux": "^7.2.8",
+=======
+    "react-redux": "^7.2.6",
+>>>>>>> a846be3cb77b7d4f3f2e17e4d090e6afe1c6b0ef
     "react-router-bootstrap": "^0.26.1",
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
