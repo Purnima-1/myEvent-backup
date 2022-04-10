@@ -1,41 +1,21 @@
 import express from "express";
-import asyncHandler from 'express-async-handler'
-import Events from "../models/eventModel.js"
+import { getEventById, getEvents, reserveEventById } from "../controllers/eventController.js";
 
 const router = express.Router()
 
 //@desc Fetch all events
 //@route GET /api/events
 // @access Public
-router.get('/', asyncHandler(async (req,res) =>{
-    const events = await Events.find()
-    res.json(events)
-}))
+router.get('/', getEvents)
 
 //@desc Fetch single event by id
 //@route GET /api/events/:id
 // @access Public
-router.get('/:id', asyncHandler(async (req,res) => {
-    const event = await Events.findById(req.params.id)
-    
-    if(event){
-        res.json(event)
-    }else{
-        res.status(404).json({message: 'Event not found'})
-    }
-}))
+router.get('/:id', getEventById)
 
 //@desc Fetch single event by id to select the events to book
 //@route GET /api/events/reserve/:id
 // @access Public
-router.get('/reserve/:id', asyncHandler(async (req,res) => {
-    const event = await Events.findById(req.params.id)
-    
-    if(event){
-        res.json(event)
-    }else{
-        res.status(404).json({message: 'Event not found'})
-    }
-}))
+router.get('/reserve/:id', reserveEventById)
 
 export default router

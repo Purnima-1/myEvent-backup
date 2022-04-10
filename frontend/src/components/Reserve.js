@@ -21,8 +21,7 @@ const Reserve = () => {
 
   const addToCartHandler = () => {
     navigate(`/cart/${params.id}?qty1=${qty1}`)
-  }
-
+      }
   return (
     <>
     {loading ? (

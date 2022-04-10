@@ -52,11 +52,8 @@ import Message from "../components/Message";
        <Button 
        disabled={event.tickets === 0} 
          className="btn-block"
-         type="button"
-          
-       >
-         
-        {event.price === "Free" ? "Register" : "Tickets"}
+         type="button" >
+          {event.price === "Free" ? "Register" : "Tickets"}
        </Button>
               </Link>
            </Col>
