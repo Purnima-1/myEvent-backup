@@ -7,14 +7,17 @@ import {
 } from "./reducers/eventReducers";
 import { cartReducer } from "./reducers/cartReducers";
 import { composeWithDevTools } from "redux-devtools-extension";
-import { userLoginReducer } from "./reducers/userReducers";
+import { userLoginReducer,userDetailsReducer,userRegisterReducer,userUpdateProfileReducer } from "./reducers/userReducers";
 
 const reducer = combineReducers({
   eventList: eventListReducer,
   eventDetails: eventReducer,
   eventReserve: eventReserveReducer,
   cart: cartReducer,
-  userLogin: userLoginReducer
+  userLogin: userLoginReducer,
+  userRegister: userRegisterReducer,
+  userDetails: userDetailsReducer,
+  userUpdateProfile: userUpdateProfileReducer
 });
 
 const cartItemsFromStorage = localStorage.getItem("cartItems")
