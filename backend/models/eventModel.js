@@ -35,11 +35,6 @@ const eventSchema = mongoose.Schema(
     },
     // reviews: [reviewSchema],
 
-    // rating: {
-    //   type: Number,
-    //   required: true,
-    //   default: 0,
-    // },
     price: {
       type: String,
       required: true
@@ -52,9 +47,7 @@ const eventSchema = mongoose.Schema(
     },
     kidprice: {
       type: Number
-      
-      
-    },
+         },
     name: {
       type: String,
       required: true,
