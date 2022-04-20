@@ -29,16 +29,16 @@ const OrderScreen = () => {
     dispatch(getOrderDetails(orderId))
         },[dispatch,orderId])
 
-// return loading ? (
-//     <Loader />
-//   ): 
-    return error ? (
+return loading ? (
+     <Loader />
+   ): 
+     error ? (
       <Message variant ='danger'>{error}</Message>
   ) : (
       <>
      
       <h1>Order {order._id}</h1>
-      {/* <Row> 
+      <Row> 
         <Col md ={8}>
       <ListGroup variant ='flush'>
           <ListGroup.Item>
@@ -133,7 +133,7 @@ const OrderScreen = () => {
             </ListGroup>
             </Card>
             </Col>
-          </Row> */}
+          </Row>
           </>
   )
 }
