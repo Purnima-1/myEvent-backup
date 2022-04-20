@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 //import axios from 'axios'
 //import {PayPalButton} from 'react-paypal-button-v2'
 import {Link,useParams} from 'react-router-dom'
@@ -25,10 +25,9 @@ const OrderScreen = () => {
             order.orderItems.reduce((acc,item) => acc + item.adtPrice * item.qty1,0)
         )
         }
-useDispatch(() => {
+     useEffect(() => {
     dispatch(getOrderDetails(orderId))
-},[])
-
+        },[dispatch,orderId])
 
 // return loading ? (
 //     <Loader />
@@ -39,7 +38,7 @@ useDispatch(() => {
       <>
      
       <h1>Order {order._id}</h1>
-      <Row> 
+      {/* <Row> 
         <Col md ={8}>
       <ListGroup variant ='flush'>
           <ListGroup.Item>
@@ -134,9 +133,10 @@ useDispatch(() => {
             </ListGroup>
             </Card>
             </Col>
-          </Row>
+          </Row> */}
           </>
   )
 }
 
 export default OrderScreen
+

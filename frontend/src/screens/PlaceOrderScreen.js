@@ -18,6 +18,7 @@ const navigate = useNavigate()
     if(success){
       navigate(`/order/${order._id}`)
     }
+    // eslint-disable-next-line
   },[success,navigate])
 
   //   Calculate prices
