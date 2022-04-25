@@ -37,7 +37,7 @@ import Message from "../components/Message";
      <Col className="column" md={3} xs={12} sm={12}>
        <ListGroup>
        <ListGroup.Item>{event.schedule?event.schedule.slice(4,11):""}</ListGroup.Item>
-         {/* <ListGroup.Item>{event.schedule.slice(5, 8)}<br/>{event.schedule.slice(8, 11)}</ListGroup.Item> */}
+        
          <ListGroup.Item>
            <h3>{event.title}</h3>
          </ListGroup.Item>
