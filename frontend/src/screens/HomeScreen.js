@@ -20,7 +20,7 @@ const {loading,error,events} = eventList
   return (
     <>
        <div>
-        <img className="img" src={myImg} alt="homepage"></img>
+        {/* <img className="img" src={myImg} alt="homepage"></img> */}
         
       </div>
       <h1 className="my-4">Upcoming Events Near You !!!</h1>
