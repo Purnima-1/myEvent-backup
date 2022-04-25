@@ -3,7 +3,7 @@ import { useDispatch, useSelector} from 'react-redux'
 import { Col, Row } from "react-bootstrap";
 
 import Event from "../components/Event";
-import myImg from "../../src/images/homePage.jpg";
+//import myImg from "../../src/images/homePage.jpg";
 import { listEvents } from '../actions/eventActions'
 import Loader from "../components/Loader";
 import Message from "../components/Message";
