@@ -1,6 +1,10 @@
 {
   "name": "explore-events",
-  "version": "1.0.1",
+  "version": "1.0.0",
+  "engines": {
+  "node": "14.17.6",
+  "npm":"8.7.0"
+  },
   "description": "my-events-app",
   "main": "server.js",
   "type": "module",
