@@ -1,8 +1,8 @@
 {
   "name": "explore-events",
   "version": "1.0.0",
-  "engines": {
-  "node": "14.17.6"  
+  "engines" :{
+"node": "14.17.6"
   },
   "description": "my-events-app",
   "main": "server.js",
