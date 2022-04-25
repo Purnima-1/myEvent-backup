@@ -1,6 +1,6 @@
 {
   "name": "explore-events",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "my-events-app",
   "main": "server.js",
   "type": "module",
@@ -11,7 +11,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\" ",
     "data:import": "node backend/seeder",
     "data:destroy": "node backend/seeder -d",
-    "heroku-postbuild": "npm install --prefix frontend && npm run build --prefix frontend"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "repository": {
     "type": "git",
